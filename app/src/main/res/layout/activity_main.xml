@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vjack.apps.calculator.MainActivity"
+    android:background="@drawable/background">
+
+    <include layout="@layout/content"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/include2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <include
+        layout="@layout/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/include" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="c"
+        android:background="@drawable/equal"
+        android:textSize="40dp"
+        android:onClick="clearClick"
+        android:layout_below="@+id/include2"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
